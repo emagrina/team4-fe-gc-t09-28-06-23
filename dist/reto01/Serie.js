@@ -2,4 +2,41 @@
 const defaultNumeroTemporada = 3;
 const defaultEntregado = false;
 class Serie {
+    constructor(newTitulo, newCreador) {
+        this.titulo = newTitulo;
+        this.creador = newCreador;
+        this.numeroTemporada = defaultNumeroTemporada;
+        this.entregado = defaultEntregado;
+        this.genero = "";
+    }
+    //Getters
+    getTitulo() {
+        return this.titulo;
+    }
+    getNumeroTemporada() {
+        return this.numeroTemporada;
+    }
+    getGenero() {
+        return this.genero;
+    }
+    getCreador() {
+        return this.creador;
+    }
+    //Setters
+    setTitulo(titulo) {
+        this.titulo = titulo;
+    }
+    setNumeroTemporada(numeroTemporada) {
+        this.numeroTemporada = numeroTemporada;
+    }
+    setGenero(genero) {
+        this.genero = genero;
+    }
+    setCreador(creador) {
+        this.creador = creador;
+    }
+    //Metodo toString
+    toString() {
+        return `Título: ${this.titulo}\nNúmero de temporadas: ${this.numeroTemporada}\nEntregado: ${this.entregado}\nGénero: ${this.genero}\nCreador: ${this.creador}`;
+    }
 }
