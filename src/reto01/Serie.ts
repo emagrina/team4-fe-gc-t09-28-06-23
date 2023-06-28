@@ -8,7 +8,13 @@ class Serie {
   private genero: string;
   private creador: string;
 
-
+  constructor(newTitulo:string,newCreador:string){
+    this.titulo=newTitulo;
+    this.creador=newCreador;
+    this.numeroTemporada=defaultNumeroTemporada;
+    this.entregaro=defaultEntregado;
+    this.genero="";
+  }
     //Getters
     public getTitulo():string {
         return this.titulo;
