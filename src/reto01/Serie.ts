@@ -4,7 +4,7 @@ const defaultEntregado = false;
 class Serie {
   private titulo: string;
   private numeroTemporada: number;
-  private entregaro: boolean;
+  private entregado: boolean;
   private genero: string;
   private creador: string;
 
@@ -12,7 +12,7 @@ class Serie {
     this.titulo=newTitulo;
     this.creador=newCreador;
     this.numeroTemporada=defaultNumeroTemporada;
-    this.entregaro=defaultEntregado;
+    this.entregado=defaultEntregado;
     this.genero="";
   }
     //Getters
