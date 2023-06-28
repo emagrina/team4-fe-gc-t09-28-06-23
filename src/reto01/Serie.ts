@@ -63,8 +63,8 @@ class Serie implements Entregable {
 
   public comparteTo(obj: any): number {
     if (obj instanceof Serie) {
-        const serie = obj as Serie;
-        return this.numeroTemporada - serie.numeroTemporada;
+      const serie = obj as Serie;
+      return this.numeroTemporada - serie.numeroTemporada;
     }
     return 0;
   }

@@ -70,8 +70,8 @@ class Videojuego implements Entregable {
 
   public comparteTo(obj: any): number {
     if (obj instanceof Videojuego) {
-        const videojuego = obj as Videojuego;
-        return this.horasEstimadas - videojuego.horasEstimadas;
+      const videojuego = obj as Videojuego;
+      return this.horasEstimadas - videojuego.horasEstimadas;
     }
     return 0;
   }
