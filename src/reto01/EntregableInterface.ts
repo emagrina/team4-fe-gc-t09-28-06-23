@@ -1,6 +1,6 @@
 interface Entregable {
     entregar(): void;
     devolver(): void;
-    esEntregado(): boolean;
+    isEntregado(): boolean;
     comparteTo(obj: any): number;
 }

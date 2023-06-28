@@ -7,7 +7,7 @@ class Serie {
         this.creador = newCreador;
         this.numeroTemporada = defaultNumeroTemporada;
         this.entregado = defaultEntregado;
-        this.genero = "";
+        this.genero = '';
     }
     //Getters
     getTitulo() {
@@ -34,6 +34,22 @@ class Serie {
     }
     setCreador(creador) {
         this.creador = creador;
+    }
+    entregar() {
+        this.entregado = true;
+    }
+    devolver() {
+        this.entregado = false;
+    }
+    isEntregado() {
+        return this.entregado;
+    }
+    comparteTo(obj) {
+        if (obj instanceof Serie) {
+            const serie = obj;
+            return this.numeroTemporada - serie.numeroTemporada;
+        }
+        return 0;
     }
     //Metodo toString
     toString() {
