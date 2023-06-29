@@ -7,11 +7,7 @@ class Serie {
         this.creador = newCreador;
         this.numeroTemporada = defaultNumeroTemporada;
         this.entregado = defaultEntregado;
-<<<<<<< HEAD
-        this.genero = "";
-=======
         this.genero = '';
->>>>>>> 600b2ce0b5310855fa01bb0999d0e4f1b12fe299
     }
     //Getters
     getTitulo() {
@@ -39,8 +35,6 @@ class Serie {
     setCreador(creador) {
         this.creador = creador;
     }
-<<<<<<< HEAD
-=======
     entregar() {
         this.entregado = true;
     }
@@ -57,7 +51,6 @@ class Serie {
         }
         return 0;
     }
->>>>>>> 600b2ce0b5310855fa01bb0999d0e4f1b12fe299
     //Metodo toString
     toString() {
         return `Título: ${this.titulo}\nNúmero de temporadas: ${this.numeroTemporada}\nEntregado: ${this.entregado}\nGénero: ${this.genero}\nCreador: ${this.creador}`;
