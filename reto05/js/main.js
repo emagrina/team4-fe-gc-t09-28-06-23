@@ -26,7 +26,6 @@ todosEspect[8] = esp9;
 todosEspect[9] = esp10;
 let sala = [];
 let asientosTotales = 20;
-let vacios = 0;
 //-------------------------------
 for (let i = 0; i < asientosTotales; i++) {
     sala[i] = "";
