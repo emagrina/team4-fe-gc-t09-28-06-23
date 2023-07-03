@@ -49,9 +49,13 @@ while (i < todosEspect.length) {
         sala[rnd] = todosEspect[i];
         i++;
       } else {
+        //console.log(todosEspect[i]);
+        //console.log("No cumple la edad");
         i++;
       }
     } else {
+      //console.log(todosEspect[i]);
+      //console.log("Esta pobre");
       i++;
     }
   }
