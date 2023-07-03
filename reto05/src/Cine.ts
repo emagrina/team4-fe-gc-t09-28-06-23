@@ -1,22 +1,18 @@
-//Declaramos las constantes con los vaores default
-const Pelicula="";
-const Precio=0;
 class Cine{
     //Declaramos pelicula y precio
-    protected Pelicula:string;
-    protected Precio:number;
-
+    protected precio:number;
+    protected idPelicula:number;
     //Hacemos el contructor
-    constructor(newPelicula:string,newPrecio:number){
-        this.Pelicula=newPelicula;
-        this.Precio=newPrecio;
+    constructor(newPrecio:number, idPelicula:number){
+        this.precio=newPrecio;
+        this.idPelicula=idPelicula;
     }
 
-    //Getters
-    getPelicula():string{
-        return this.Pelicula;
-    }
     getPrecio():number{
-        return this.Precio;
+        return this.precio;
+    }
+
+    getidPelicula():number{
+        return this.idPelicula;
     }
 }

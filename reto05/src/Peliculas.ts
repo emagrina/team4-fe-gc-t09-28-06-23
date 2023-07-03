@@ -7,8 +7,8 @@ class Peliculas extends Cine{
     private Director:string;
 
     //Creamos el constructor
-    constructor(newTitulo:string,newDuracion:number,newEdadMinima:number,newDirector:string){
-        super(Pelicula,Precio);
+    constructor(precio:number, idPelicula:number, newTitulo:string,newDuracion:number,newEdadMinima:number,newDirector:string){
+        super(precio, idPelicula);
         this.Titulo=newTitulo;
         this.Duracion=newDuracion;
         this.EdadMinima=newEdadMinima;
